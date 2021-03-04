@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>water algebra</title>
+	<meta charset="utf-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<meta name="description" content="mctavish ::: water algebra" />
+	<meta name="keywords" content="mctavish net.art water algebra mill river generative algorithmic code calculus physics hydrology electronic literature" />
+	<meta name="author" content="kathy mctavish">
+	<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+	<link rel="manifest" href="/manifest.json">
+	<script type="application/ld+json">
+		{
+			"@context": "http://schema.org",
+			"@type": "WebPage",
+			"name": "water algebra",
+			"breadcrumb": "water algebra",
+          		"url": "http://www.wateralgebra.work/index.html",
+			"description": "water algebra",
+			"datePublished": "2021-03-08",
+          		"image": "https://www.mctavish.io/apple-touch-icon.png",
+			"author": "https://mctavish.io",
+			"license": "http://creativecommons.org/licenses/by-nc-sa/3.0/us/deed.en_US"
+		}
+	</script>
+	<link rel="stylesheet" href="/css/wateralgebra.css"/>
+	<style>
+		
+		#subtextframe > div.shape {
+			font-family: var(--monospace_zerodot);
+			font-size: 40vmin;
+			transition: color 1s, opacity 2s, transform 1s;
+			color: var(--red);
+			opacity:0;
+		}
+		.tcontainer {
+			width:100%;
+			overflow: hidden;
+		}
+		.tickerwrap {
+			width:100%;
+			padding-left:100%;
+			/*background-color: var(--warmgray);*/
+		}
+		@keyframes tickerleft {
+			0% { transform: translate3d(0,0,0); }
+			100% { transform: translate3d(-600%,0,0); }
+		}
+		@keyframes tickerright {
+			0% { transform: translate3d(0,0,0); }
+			100% { transform: translate3d(600%,0,0); }
+		}
+		.tickermove {
+			display: inline-block;
+			white-space: nowrap;
+			padding-right:100%;
+			animation-iteration-count: infinite;
+			animation-timing-function: linear;
+			animation-name: tickerleft;
+			animation-duration: 20s;
+			animation-direction: alternate;
+			color: var(--warmwhite);
+		}
+		.tickermove:hover {
+			animation-play-state: paused;
+		}
+		.tickermove:nth-child(4n+1) {
+			animation-delay: 5s;
+			color: var(--warmblack);
+		}
+		.tickermove:nth-child(4n+2) {
+			animation-delay: 11s;
+			color: var(--warmwhite);
+		}
+		.tickermove:nth-child(4n+3) {
+			animation-delay: 14s;
+			color: var(--red);
+		}
+		.tickeritem {
+			display: inline-block;
+			font-size: 40vh;
+			padding: 0 2rem;
+		}
+		body {
+			transition: background-color 800ms linear;
+		}
+	</style>
+	
+</head>
+<body id="top" >
+<div id="svgframe" aria-hidden="true"></div>
+<div id="divframe" class="compress" aria-hidden="true" >
+	<article class="poem hugetext" >
+		<ul data-role="rider" class="stanza">
+		<li>this then this a ritual grassland reclamation</li>
+		<li>(re)enactment</li>
+		<li>action painting action coding</li>
+		<li>abstract insurrection</li>
+		<li>repair sound reverberate</li>
+		<li>thrum thatch call</li>
+		<li>a bird blade leaf stem</li>
+		<li>frequency vibration</li>
+		<li>signal short wave</li>
+		<li>modulation resonation</li>
+		<li>radio photo destination</li>
+		<li>a photosynthesis</li>
+		<li>transfer raw vertex junction pivot pools</li>
+		<li>food web weights & likelihoods</li>
+		<li>circle orbit cycling need</li>
+		<li>birth growth death decay</li>
+		<li>de compose release</li>
+		</ul>
+
+		<ul data-role="rider" class="stanza">
+		<li>faint signal pale wave slow current</li>
+		<li>faraway transmission</li>
+		<li>faded recording</li>
+		<li>long ago the far away</li>
+		<li>a t-cell twist like this it goes</li>
+		<li>that jukebox love song</li>
+		<li>jukebox archive jukebox dance</li>
+		<li>song rusty turnstile</li>
+		<li>chance song billiard dice song</li>
+		<li>co2 roulette</li>
+		<li>trophic past text</li>
+		<li>particles of speech</li>
+		<li>trophic cascade light water</li>
+		<li>steam then ghost</li>
+		</ul>
+
+		<ul data-role="rider" class="stanza">
+		<li>corner bar stool rider napkin blueprints cipher curves & codes beer-stained formula calculations configurations transformations meditations desperate connotations</li>
+		</ul>
+
+		<ul data-role="rider" class="stanza">
+		<li>trace erosion fragment shadow window time</li>
+		<li>season shifted local sundial noon-line</li>
+		<li>fragment blueprint blue light paper pressing</li>
+		<li>chronometer opacity odometer silent breath</li>
+		<li>grass blade whisper vapor ghost</li>
+		<li>carbon cycle chlorophyl bone</li>
+		<li>detrital join uptake weight</li>
+		<li>rhizome tent matrix building frame</li>
+		</ul>
+
+</article>
+
+
+</div>
+<div id="subtextframe" aria-hidden="true">
+	<div class="shape">x</div>
+	<div class="tcontainer">
+		<div class="tickermove">
+			<div class="tickerwrap">
+				<div class="tickeritem">_.._._+ . < +=_.._._+ . < +=_.._._+ . < +=: :  . < > '",". . . . . .& | { . . ::: x</div>
+			</div>
+		</div>
+		<div class="tickermove">
+			<div class="tickerwrap">
+				<div class="tickeritem">_.._._+ . < +=_.._._+ . < +=_.._._+ . < +=: :  . < > '",". . . . . .& | { . . ::: x</div>
+			</div>
+		</div>
+		<div class="tickermove">
+			<div class="tickerwrap">
+				<div class="tickeritem">_.._._+ . < +=_.._._+ . < +=_.._._+ . < +=: :  . < > '",". . . . . .& | { . . ::: x</div>
+			</div>
+		</div>
+		<div class="tickermove">
+			<div class="tickerwrap">
+				<div class="tickeritem">_.._._+ . < +=_.._._+ . < +=_.._._+ . < +=: :  . < > '",". . . . . .& | { . . ::: x</div>
+			</div>
+		</div>
+	</div>
+</div> <!-- end of subtext frame -->
+<div id="wordframe" aria-hidden="true"></div>
+<div id="contentframe" aria-hidden="true">
+
+<main id="main">
+<header>
+	<h1>water algebra</h1>
+	<h2>. . ~ ~ ~</h2>
+</header>
+<nav>
+	<ul class="stanza">
+		<!-- <li><a href="#maincontent" id="skiptomaincontent">skip to main content</a></li> -->
+		<li><a href="https://mctavish.io/index.html" id="homelink">go to mctavish portfolio</a></li>
+		<!-- <li><a href="codescores.html">code & scores</a></li> -->
+		<li><a href="#dashboard" id="gotodashboard">access dashboard</a></li>
+	</ul>
+</nav>
+<div class="screenreader-text">
+	<p>Your feedback is always welcome.</p>
+</div>
+
+<article class="poem" id="maincontent">
+	<header>
+		<h1>. < : > .</h1>
+	</header>
+		<ul data-role="rider" class="stanza">
+		<li>this then this a ritual grassland reclamation</li>
+		<li>(re)enactment</li>
+		<li>action painting action coding</li>
+		<li>abstract insurrection</li>
+		<li>repair sound reverberate</li>
+		<li>thrum thatch call</li>
+		<li>a bird blade leaf stem</li>
+		<li>frequency vibration</li>
+		<li>signal short wave</li>
+		<li>modulation resonation</li>
+		<li>radio photo destination</li>
+		<li>a photosynthesis</li>
+		<li>transfer raw vertex junction pivot pools</li>
+		<li>food web weights & likelihoods</li>
+		<li>circle orbit cycling need</li>
+		<li>birth growth death decay</li>
+		<li>de compose release</li>
+		</ul>
+
+		<ul data-role="rider" class="stanza">
+		<li>faint signal pale wave slow current</li>
+		<li>faraway transmission</li>
+		<li>faded recording</li>
+		<li>long ago the far away</li>
+		<li>a t-cell twist like this it goes</li>
+		<li>that jukebox love song</li>
+		<li>jukebox archive jukebox dance</li>
+		<li>song rusty turnstile</li>
+		<li>chance song billiard dice song</li>
+		<li>co2 roulette</li>
+		<li>trophic past text</li>
+		<li>particles of speech</li>
+		<li>trophic cascade light water</li>
+		<li>steam then ghost</li>
+		</ul>
+
+		<ul data-role="rider" class="stanza">
+		<li>corner bar stool rider napkin blueprints cipher curves & codes beer-stained formula calculations configurations transformations meditations desperate connotations</li>
+		</ul>
+
+		<ul data-role="rider" class="stanza">
+		<li>trace erosion fragment shadow window time</li>
+		<li>season shifted local sundial noon-line</li>
+		<li>fragment blueprint blue light paper pressing</li>
+		<li>chronometer opacity odometer silent breath</li>
+		<li>grass blade whisper vapor ghost</li>
+		<li>carbon cycle chlorophyl bone</li>
+		<li>detrital join uptake weight</li>
+		<li>rhizome tent matrix building frame</li>
+		</ul>
+</article>
+
+
+<fieldset id="dashboard">
+<legend>access dashboard</legend>
+<label for="sound"><input id="sound" type="checkbox"> play sound</label>
+<label for="highcontrast"><input id="highcontrast" type="checkbox"> high contrast</label>
+<label for="largetext"><input id="largetext" type="checkbox"> large text</label>
+<label for="darklight"><input id="darklight" type="checkbox"> dark / light</label>
+</fieldset>
+<nav>
+	<ul class="stanza">
+		<li><a href="#top" class="corelink">^ back to top</a></li>
+		<li><a href="index.html" id="homelink">home (go back)</a></li>
+		<li><a href="https://mctavish.io/index.html" id="homelink">mctavish portfolio</a></li>
+		
+	</ul>
+</nav>
+</main>
+<footer>
+<p id="animationcontrols" style="min-width:100%">
+<label for="animationonly"><input id="animationonly" type="checkbox"> animation only (hide text)</label>
+</p>
+
+</footer>
+
+</div> <!-- end contentframe -->
+
+</body>
+<script src="/code/wateralgebra.js"></script>
+<script>
+let z = getz();
+
+//draw
+( () => {
+
+	let width = window.innerWidth, height = window.innerHeight;
+	let max = Math.max(width, height), min = Math.min(width, height);
+	let dx = width/4, dy = height/4;
+	
+	let textpour = document.querySelector(".shape");
+	let letters = "hellow0rLd-.|".split("");
+	let dt=200;
+	document.querySelector("body").addEventListener("click", e => {
+		if(!z.highcontrast) {
+			textpour.style.opacity=1.0;
+			textpour.style.left = e.clientX+"px";
+			textpour.style.top = e.clientY+"px";
+				
+				letters.forEach( (l,j) => {
+					window.setTimeout( () => {
+						textpour.innerText=l;
+					}, j*dt);
+				})
+				window.setTimeout( () => {
+						textpour.style.opacity=0.0;
+					}, (letters.length+1)*dt);
+	
+		} 
+	});
+
+	window.addEventListener("resize", e => {
+		width = window.innerWidth; height = window.innerHeight;
+		max = Math.max(width, height), min = Math.min(width, height);
+		console.log("window.innerWidth = " + window.innerWidth);
+
+		let dx = width/4, dy = height/4;
+		
+	});
+
+ 	( () => {
+ 		let count = 0;
+ 		let decorations = ["underline .2em", "overline .2em", "line-through .2em"];
+		const body = document.querySelector("body");
+		let colors = [["var(--warmblack)",4], ["var(--warmwhite)",4], ["var(--red)",4], ["var(--yellow)",0], ["var(--warmgray)",1]].reduce( (acc, color, j) => {
+			Array.prototype.push.apply(acc,[...Array(color[1]).keys()].reduce( (acc2,k) => { acc2.push(color[0]); return acc2 },[]) );
+			return acc;
+		}, []);
+		z.tools.logmsg("colors= " + colors);
+		window.setInterval(() => { 
+			++count;
+			let color = colors[z.tools.randominteger(0,colors.length)];
+			// z.tools.logmsg("line = " + z.elements.poems[0].stanzas[0].lines[0].el.innerText);
+			let poem = z.elements.poems[z.tools.randominteger(0,z.elements.poems.length)];
+			let stanza = poem.stanzas[z.tools.randominteger(0,poem.stanzas.length)];
+			let line = stanza.lines[z.tools.randominteger(0,stanza.lines.length)];
+			z.tools.logmsg("line = " + line.el.innerText);
+			// line.el.style.backgroundColor = colors[z.tools.randominteger(0,colors.length)];
+			line.el.style.textDecoration =  color + " " + decorations[z.tools.randominteger(0,decorations.length)];
+			// body.style.backgroundColor = "var(--"+color+")";
+		}, 2000);
+	})();
+
+	( () => {
+		z.elements.frames.divframe.el.style.transform="translateY("+-1.0*z.tools.randominteger(10,100)+"vh)";
+		window.setInterval(() => { 
+			z.elements.frames.divframe.el.style.transform="translateY("+-1.0*z.tools.randominteger(10,100)+"vh)" + " scale("+z.tools.randominteger(4,40)/10+")";
+		}, 5000);
+		// window.setInterval(() => { 
+		// 	z.elements.frames.divframe.el.style.transform="translateY("+-1.0*z.tools.randominteger(10,100)+"vh)" + " cale("+z.tools.randominteger(4,40)/10+")";
+		// }, 5000);
+	})();
+
+})();
+
+z.radio.start(z);
+
+//set up sound
+( () => {
+	z.radio.play = () => {
+		try {
+			z.radio.player.context.resume().then(() => {
+				z.tools.logmsg("playback resumed");
+				z.radio.soundplaying = true;
+			});
+		} catch(e) { z.tools.logerror("dashboard ::: resumeaudio " + e) } 
+		
+	};
+	z.radio.pause = () => {
+		try {
+			z.radio.player.context.suspend().then(() => {
+				z.radio.soundplaying = false;
+			});
+		} catch(e) { z.tools.logerror("dashboard ::: suspendaudio " + e) }
+		
+	};
+	const defaultduration = (dt,n,graintdt,clip) => dt/(graindt*2);
+	const defaultfadetime = (dt,n,graintdt,clip) => dt/(graindt*20);
+	const defaultpart = (dt=4000, n=4, graindt=400, chance=0.8, duration=defaultduration, fadetime=defaultfadetime, instruments=["celloknockcanyon"]) => { return {dt:dt, chance:chance, graindt: graindt, n: 5, duration: duration(dt,n,graintdt), fadetime: fadetime(dt,n,graintdt), instruments: ["celloknockcanyon"] } };
+	const score = [
+		// ((dt=251000, n=4, graindt=800, duration=3, chance=0.8, volume=0.3) => { return {dt:dt, chance:chance, graindt: graindt, n: n, duration: duration, fadetime: duration*.1, volume:volume, instruments: ["bagpipe1high", "bagpipegeese"] } })(),
+		// ((dt=251000, n=5, graindt=600, duration=2, chance=0.8, volume=0.3) => { return {dt:dt, chance:chance, graindt: graindt, n: n, duration, fadetime: duration*.1, volume:volume, instruments: ["bagpipe1high", "bagpipegeese"] } })(),
+		// ((dt=118000, n=2, graindt=600, duration=4, chance=0.8, volume=0.6) => { return {dt:dt, chance:chance, graindt: graindt, n: n, duration: duration, fadetime: duration*.1, volume:volume, instruments: ["lookingforyou0"] } })(),
+		// ((dt=119000, n=1, graindt=900, duration=5, chance=0.8, volume=0.6) => { return {dt:dt, chance:chance, graindt: graindt, n: n, duration: duration, fadetime: duration*.1, volume:volume, instruments: ["lookingforyou0"] } })(),
+		// ((dt=51000, n=8, graindt=480, duration=10, chance=0.9, volume=0.6) => { return {dt:dt, chance:chance, graindt: graindt, n: n, duration: duration, fadetime: duration*.1, volume:volume, instruments: ["mags1harmonic", "magsII_a","magsIII_a","magsIV_b","magsV_b","magsIV_b","magsV_b","magsIV_b","magsV_b", "magsV_b", "magsV_b","magsvii_b"] } })(),
+		// ((dt=51000, n=6, graindt=680, duration=8, chance=0.9, volume=0.6) => { return {dt:dt, chance:chance, graindt: graindt, n: n, duration: duration, fadetime: duration*.1, volume:volume, instruments: ["magsII_a","magsIII_a","magsIV_b","magsV_b","magsIV_b","magsV_b","magsIV_b","magsV_b","magsV_b", "magsV_b","magsvii_b"] } })(),
+		// ((dt=51000, n=3, graindt=1080, duration=10, chance=0.9, volume=0.6) => { return {dt:dt, chance:chance, graindt: graindt, n: n, duration: duration, fadetime: duration*.1, volume:volume, instruments: ["magsII_a","magsIII_a","magsIV_b","magsV_b","magsIV_b","magsV_b","magsIV_b","magsV_b","magsV_b", "magsV_b","magsvii_b"] } })(),
+		((dt=111000, n=3, graindt=1100, duration=10, chance=0.8, volume=0.3) => { return {dt:dt, chance:chance, graindt: graindt, n: n, duration: duration, fadetime: duration*.2, volume:volume, instruments: ["crow1"] } })(),
+		((dt=111000, n=4, graindt=900, duration=10, chance=0.8, volume=0.3) => { return {dt:dt, chance:chance, graindt: graindt, n: n, duration: duration, fadetime: duration*.2, volume:volume, instruments: ["crow1"] } })(),
+		((dt=71000, n=2, graindt=600, duration=4, chance=0.8, volume=0.6) => { return {dt:dt, chance:chance, graindt: graindt, n: n, duration: duration, fadetime: duration*.1, volume:volume, instruments: ["birdcanyon"] } })(),
+		((dt=71000, n=1, graindt=900, duration=5, chance=0.8, volume=0.6) => { return {dt:dt, chance:chance, graindt: graindt, n: n, duration: duration, fadetime: duration*.1, volume:volume, instruments: ["birdcanyon"] } })(),
+		((dt=91000, n=4, graindt=900, duration=5, chance=0.8, volume=0.4) => { return {dt:dt, chance:chance, graindt: graindt, n: n, duration: duration, fadetime: duration*.1, volume:volume, instruments: ["birdcry"] } })(),
+		((dt=51000, n=2, graindt=800, duration=8, chance=0.8, volume=0.6) => { return {dt:dt, chance:chance, graindt: graindt, n: n, duration: duration, fadetime: duration*.1, volume:volume, instruments: ["typewriter1"] } })(),
+		((dt=52000, n=1, graindt=900, duration=5, chance=0.8, volume=0.6) => { return {dt:dt, chance:chance, graindt: graindt, n: n, duration: duration, fadetime: duration*.1, volume:volume, instruments: ["typewriter1"] } })(),
+		((dt=101000, n=4, graindt=900, duration=5, chance=0.8, volume=0.4) => { return {dt:dt, chance:chance, graindt: graindt, n: n, duration: duration, fadetime: duration*.1, volume:volume, instruments: ["typewriter1"] } })(),
+		((dt=81000, n=4, graindt=900, duration=5, chance=0.8, volume=0.4) => { return {dt:dt, chance:chance, graindt: graindt, n: n, duration: duration, fadetime: duration*.1, volume:volume, instruments: ["typewriter1"] } })(),
+		((dt=81000, n=3, graindt=400, duration=12, chance=0.8, volume=0.4) => { return {dt:dt, chance:chance, graindt: graindt, n: n, duration: duration, fadetime: duration*.1, volume:volume, instruments: ["birdcry"] } })(),
+	];
+	z.radio.load(z.tools.flatten(score.map(part => part.instruments)));
+	score.forEach( (part,j) => {
+		window.setInterval( () => {
+			let clip = part.instruments[z.tools.randominteger(0,part.instruments.length)];
+				// Kefir.sequentially(part.graindt, [...Array(part.n).keys()]).onValue( x => { 
+					// z.radio.playbuffer({duration:part.duration, fadetime:part.fadetime, instrumentname:clip, volume: z.tools.randominteger(z.data.sound.instruments[clip].minvolume*10, z.data.sound.instruments[clip].maxvolume*10)/20});
+					z.tools.logmsg("-- " + clip)
+					z.radio.playbuffer({duration:part.duration, fadetime:part.fadetime, instrumentname:clip, volume: z.tools.randominteger(z.data.sound.instruments[clip].minvolume*10, z.data.sound.instruments[clip].maxvolume*10)*part.volume/10});
+				// });
+		}, part.dt)
+	});
+})();
+
+
+</script>
+</html>
